@@ -4,6 +4,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Rock, Paper, Scissors</title>
+		<style>
+			body {
+				padding: 3em;
+			}
+			button {
+				margin: 1.5em;
+				padding: 0.5em;
+			}
+		</style>
 		<script>
 			function computerPlay() {
 				compTest = Math.floor(Math.random() * 3 + 1);
@@ -90,5 +99,7 @@
 		</script>
 	</head>
 
-	<body onload="play()"></body>
+	<body>
+		<button onclick="play()">Play!</button>
+	</body>
 </html>
