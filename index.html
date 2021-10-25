@@ -1,59 +1,94 @@
 <html>
-    <head>
-        <meta charset='utf-8' />
-        <title>Rock, Paper, Scissors</title>
-    <script>
-        function computerPlay() {
-            compTest = Math.floor((Math.random() * 3) + 1);
-            switch(compTest) {
-                case 1: { return "Rock"; }
-                case 2: { return "Paper"; }
-                case 3: { return "Scissors"; }
-                default: { return "Unknown"; }
-            }
-        }
-        function playerPlay() {
-            return prompt("What do you choose?", "Unknown");
-        }
-        function playRound(playerSelection, compSelection) {
-            switch(playerSelection) {
-                case "ROCK": {
-                    switch(compSelection) {
-                        case "ROCK": { return "It was a Draw!"; }
-                        case "PAPER": { return "You lost! Paper covers Rock!"; }
-                        case "SCISSORS": { return "You won! Rock breaks Scissors!"; }
-                        default: { return "Incorrect Selection by Computer!"; }
-                    }
-                }
-                case "PAPER": {
-                    switch(compSelection) {
-                        case "ROCK": { return "You won! Paper covers Rock!"; }
-                        case "PAPER": { return "It was a Draw!"; }
-                        case "SCISSORS": { return "You lost! Scissors cut paper!"; }
-                        default: { return "Incorrect Selection by Computer!"; }
-                    }
-                }
-                case "SCISSORS": {
-                    switch(compSelection) {
-                        case "ROCK": { return "You lost! Rock breaks Scissors!"; }
-                        case "PAPER": { return "You won! Scissors cut Paper!"; }
-                        case "SCISSORS": { return "It was a Draw!"; }
-                        default: { return "Incorrect Selection by Computer!"; }
-                    }
-                }
-                default: { return "Incorrect Selection by Player!"; }
-            }
-        }
-        function play() {
-            let playerSelection = playerPlay().toUpperCase();
-            let compSelection = computerPlay().toUpperCase();
-            console.log(playerSelection);
-            console.log(compSelection);
-            console.log(playRound(playerSelection, compSelection));
-        }
-    </script>
-    </head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rock, Paper, Scissors</title>
+		<script>
+			function computerPlay() {
+				compTest = Math.floor(Math.random() * 3 + 1);
+				switch (compTest) {
+					case 1: {
+						return "Rock";
+					}
+					case 2: {
+						return "Paper";
+					}
+					case 3: {
+						return "Scissors";
+					}
+					default: {
+						return "Unknown";
+					}
+				}
+			}
+			function playerPlay() {
+				return prompt("What do you choose?", "Unknown");
+			}
+			function playRound(playerSelection, compSelection) {
+				switch (playerSelection) {
+					case "ROCK": {
+						switch (compSelection) {
+							case "ROCK": {
+								return "It was a Draw!";
+							}
+							case "PAPER": {
+								return "You lost! Paper covers Rock!";
+							}
+							case "SCISSORS": {
+								return "You won! Rock breaks Scissors!";
+							}
+							default: {
+								return "Incorrect Selection by Computer!";
+							}
+						}
+					}
+					case "PAPER": {
+						switch (compSelection) {
+							case "ROCK": {
+								return "You won! Paper covers Rock!";
+							}
+							case "PAPER": {
+								return "It was a Draw!";
+							}
+							case "SCISSORS": {
+								return "You lost! Scissors cut paper!";
+							}
+							default: {
+								return "Incorrect Selection by Computer!";
+							}
+						}
+					}
+					case "SCISSORS": {
+						switch (compSelection) {
+							case "ROCK": {
+								return "You lost! Rock breaks Scissors!";
+							}
+							case "PAPER": {
+								return "You won! Scissors cut Paper!";
+							}
+							case "SCISSORS": {
+								return "It was a Draw!";
+							}
+							default: {
+								return "Incorrect Selection by Computer!";
+							}
+						}
+					}
+					default: {
+						return "Incorrect Selection by Player!";
+					}
+				}
+			}
+			function play() {
+				let playerSelection = playerPlay().toUpperCase();
+				let compSelection = computerPlay().toUpperCase();
+				console.log(playerSelection);
+				console.log(compSelection);
+				console.log(playRound(playerSelection, compSelection));
+			}
+		</script>
+	</head>
 
-    <body onload='play()'>
-    </body>
+	<body onload="play()"></body>
 </html>
