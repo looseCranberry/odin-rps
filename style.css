@@ -1,0 +1,45 @@
+html {
+	color: white;
+	background: black;
+	font-size: 12px;
+	font-family: Helvetica, Verdana, Tahoma, sans-serif;
+}
+button {
+	color: blanchedalmond;
+	margin: 1em 0.5em;
+	padding: 0.5em;
+	width: 10em;
+	height: 5em;
+	opacity: 50%;
+	background-color: black;
+	border: none;
+	border-bottom: 1px solid blue;
+}
+button:hover {
+	color: black;
+	background: white;
+}
+.container {
+	display: flex;
+	margin: 2em;
+}
+.centered {
+	align-self: center;
+}
+.centered-items {
+	align-items: center;
+}
+.columned {
+	flex-direction: column;
+}
+#content {
+	margin: 1em 0;
+	color: white;
+	background: url("/lib/BG.jpg") bottom center;
+}
+#devilScore,
+#angelScore,
+#matchState {
+	align-self: center;
+	font-size: 24px;
+}
