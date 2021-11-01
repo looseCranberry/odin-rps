@@ -32,6 +32,9 @@ button:hover {
 .columned {
 	flex-direction: column;
 }
+.push5 {
+	padding: 2em 0 0;
+}
 #content {
 	margin: 1em 0;
 	color: white;

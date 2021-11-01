@@ -4,9 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Rock, Paper, Scissors!</title>
 		<link rel="stylesheet" href="style.css" />
-		<script src="script.js"></script>
+		<script src="script.js" defer></script>
 	</head>
 	<body>
 		<div class="container columned">
@@ -19,7 +19,7 @@
 					<img id="devilFace" src="/lib/devilsmile.png" width="320px" />
 					<h3 id="devilScore">0</h3>
 				</div>
-				<div class="container columned centered-items">
+				<div class="push5 container columned centered-items">
 					<div><button id="ROCK">ROCK</button></div>
 					<div><button id="PAPER">PAPER</button></div>
 					<div><button id="SCISSORS">SCISSORS</button></div>
@@ -36,7 +36,7 @@
 			const buttons = document.querySelectorAll("button");
 			buttons.forEach((button) => {
 				button.addEventListener("click", () => {
-					playerSelect(button.id);
+					playHands(button.id);
 				});
 			});
 		</script>
