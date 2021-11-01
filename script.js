@@ -126,19 +126,11 @@ function setMatchState(state) {
 
 function setAvatars(win) {
 	if (win) {
-		document
-			.getElementById("devilFace")
-			.setAttribute("src", "/lib/devilfrown.png");
-		document
-			.getElementById("angelFace")
-			.setAttribute("src", "/lib/angelsmile.png");
+		document.getElementById("devilFace").setAttribute("src", "devilfrown.png");
+		document.getElementById("angelFace").setAttribute("src", "angelsmile.png");
 	} else {
-		document
-			.getElementById("devilFace")
-			.setAttribute("src", "/lib/devilsmile.png");
-		document
-			.getElementById("angelFace")
-			.setAttribute("src", "/lib/angelfrown.png");
+		document.getElementById("devilFace").setAttribute("src", "devilsmile.png");
+		document.getElementById("angelFace").setAttribute("src", "angelfrown.png");
 	}
 }
 
