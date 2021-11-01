@@ -38,7 +38,7 @@ button:hover {
 #content {
 	margin: 1em 0;
 	color: white;
-	background: url("/lib/BG.jpg") bottom center;
+	background: url("BG.jpg") bottom center;
 }
 #devilScore,
 #angelScore,
